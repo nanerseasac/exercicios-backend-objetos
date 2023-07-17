@@ -13,21 +13,34 @@ const renato = { nome: "Renato", carrinho: [] };
 const jose = { nome: "José", carrinho: [] };
 const roberto = { nome: "Roberto", carrinho: [] };
 
-jose.carrinho = [
-	{ ...tv, quantidade: 1 },
-	{ ...caboUsb, quantidade: 2 },
-	{ ...webcam, quantidade: 1 },
-];
-carlos.carrinho = [{ ...notebook, quantidade: 2 }];
-patricia.carrinho = [
-	{ ...teclado, quantidade: 1 },
-	{ ...caboUsb, quantidade: 2 },
-	{ ...mouse, quantidade: 1 },
-	{ ...monitor, quantidade: 1 },
-];
+jose.carrinho.push({item: tv, quantidade: 1}, {item: caboUsb, quantidade: 2})
+carlos.carrinho.push({item: notebook, quantidade: 2})
+patricia.carrinho.push({item: caboUsb, quantidade: 2}, {item: carregador, quantidade: 1}, {item: mouse, quantidade: 1}, {item: monitor, quantidade: 1})
+renato.carrinho.push({item: webcam, quantidade: 5})
+roberto.carrinho.push({item: caboUsb, quantidade: 2}, {item: monitor, quantidade: 1})
 
-renato.carrinho = [{...webcam, quantidade: 5}]
 
-roberto.carrinho = [{...caboUsb, quantidade: 2}]
+console.log(roberto.carrinho)
 
-console.log(renato, roberto, patricia, carlos, jose);
+
+// jose.carrinho = [
+// 	{ ...tv, quantidade: 1 },
+// 	{ ...caboUsb, quantidade: 2 },
+// 	{ ...webcam, quantidade: 1 },
+// ];
+// carlos.carrinho = [{ ...notebook, quantidade: 2 }];
+// patricia.carrinho = [
+// 	{ ...teclado, quantidade: 1 },
+// 	{ ...caboUsb, quantidade: 2 },
+// 	{ ...mouse, quantidade: 1 },
+// 	{ ...monitor, quantidade: 1 },
+// ];
+
+// renato.carrinho = [{...webcam, quantidade: 5}]
+
+// roberto.carrinho = [{...caboUsb, quantidade: 2}]
+
+// console.log(renato, roberto, patricia, carlos, jose);
+
+
+
